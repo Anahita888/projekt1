@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin: 0 20px;
+}
+
+img{
+    width: 100px;
+    margin-left: 10px;
+}
+
+#left-menu, #right-menu{
+    display: flex;
+    gap: 10px;
+    
+}
+
+#right-menu{
+    margin-left: 400px;
+}
+
+.pil{
+    width: 10px;
+    
+    margin-left: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    /*INTE RÄTT TYPSNITT*/
+    font-family: system-ui;
+
+}
+
+.button-request{
+    border-right: solid 1px grey;
+    padding-right: 20px;
+    height: 15px;
+}
+
+/* MENYN SLUTAR HÄR*/
+
