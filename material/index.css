@@ -50,5 +50,47 @@ nav a{
     height: 15px;
 }
 
+/* ändra färg, padding behövs? */
+.button-request:hover{
+    background-color: rgb(126, 24, 24);
+    box-shadow: 0px 6px 10px green;
+}
+
 /* MENYN SLUTAR HÄR*/
+
+main{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#sektion-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    font-family: system-ui;
+}
+
+/*OSÄKER PÅ OM DET ÄR RÄTT*/
+.black-button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+/*OSÄKER PÅ OM DET ÄR RÄTT AVSLUTAR HÄR*/
+
+
+
+
+
 
