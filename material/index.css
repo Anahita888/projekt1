@@ -14,7 +14,7 @@ nav{
     justify-content: space-between;
     padding: 20px 0px;
     margin: 0 20px;
-    border-bottom: 1px solid grey
+    border-bottom: 1px solid #e5e5e5;
     
 }
 
@@ -54,8 +54,8 @@ nav a{
 
 
 #liten-border{
-    border-right: solid 1px grey;
-     width: 1px; 
+    border-right: solid 1px #d5d1d1;
+    width: 1px; 
     height: 20px; 
     align-self: center;
 }
@@ -86,6 +86,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -97,25 +99,48 @@ main{
     gap: 10px;
     padding: 50px;
     font-family: system-ui;
+    max-width: 999px;
+    
+}
+
+.sektion-1-bild{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.sektion-info-1 p{
+    margin-bottom: 27px;
 }
 
 /*OSÄKER PÅ OM DET ÄR RÄTT*/
 .black-button-getbarky{
     background-color: black;
     color: white;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 7px;
+    border-radius: 5px;
     text-decoration: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 200px;
 }
 /*OSÄKER PÅ OM DET ÄR RÄTT AVSLUTAR HÄR*/
 
-
-.teams-hero{
-    width: 100px;
-    margin-left: 10px;
+.border-logo{
+    border-bottom: 20px solid #5b2222;
 }
 
+#sektion-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+#sektion-2 img{
+    height: 20px;
+    
+}
 
 
