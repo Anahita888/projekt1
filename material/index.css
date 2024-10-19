@@ -120,7 +120,6 @@ main{
     margin-bottom: 27px;
 }
 
-/*OSÄKER PÅ OM DET ÄR RÄTT*/
 .black-button-getbarky{
     background-color: black;
     color: white;
@@ -130,7 +129,7 @@ main{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 200px;
 }
-/*OSÄKER PÅ OM DET ÄR RÄTT AVSLUTAR HÄR*/
+
 
 .border-logo{
     border-bottom: 1px solid #5e5e5e5e;
@@ -149,6 +148,48 @@ main{
 
 #sektion-2 img{
     height: 20px;
+    
+}
+
+/*FÖRSTA BILDEN OM EKORRAR*/
+
+.sektion-3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+    font-family: system-ui;
+}
+
+.sektion-3-snabb-resultat{
+    max-width: 500px;
+    text-align: left;
+}
+
+.main-sektion-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.sektion-3-bild{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.liten-loggo-sektion-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.liten-loggo-sektion-3 img{
+    width: 40px;
     
 }
 
