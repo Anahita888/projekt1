@@ -392,4 +392,34 @@ main{
 #work-sektion-7{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin: 20px 0 80px 0 ;
+    width: 800px;
+    
 }
+
+.work-sektion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.work-sektion p{
+    color: #7f7f7f;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.work-sektion a:hover{
+    color: rgb(63, 135, 194);
+    cursor: pointer;
+}
+
+.learn-more{
+    color: black;
+}
+
+.border-7{
+    border-right: 1px solid #e5e5e5;   
+}
+
+/*NY SEKTION (SEKTION-8)/*
