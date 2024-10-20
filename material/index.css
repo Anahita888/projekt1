@@ -424,3 +424,41 @@ main{
 
 /*NY SEKTION (SEKTION-8)*/
 
+.slut-sektion-8{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.betyg-sektion-8{
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    padding: 50px 10px;
+}
+
+.betyg-sektion-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.betyg-sektion-info h3{
+    font-size: 24px;
+    font-weight: 450;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.betyg-sektion-info p{
+    margin: 0;
+}
+
+.badges{
+    height: 200px;
+    max-width: 100%;
+}
+
+.procent-sektion-8{
+   display: grid; 
+}
