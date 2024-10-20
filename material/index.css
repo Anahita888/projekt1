@@ -390,5 +390,6 @@ main{
 }
 
 #work-sektion-7{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
