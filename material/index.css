@@ -460,5 +460,6 @@ main{
 }
 
 .procent-sektion-8{
-   display: grid; 
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
 }
