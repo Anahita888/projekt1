@@ -73,7 +73,7 @@ nav a{
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    padding: 5px;
+    padding: 7px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -319,5 +319,56 @@ main{
 /* SEKTION-6 BÖRJAR HÄR*/
 
 .sektion-6{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    max-width: 650px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: system-ui;
+}
+
+.sketion-6-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.sektion-6-info h1{
+    line-height: 1;
+    margin: 0;
+}
+
+#check-lista{
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    width: 800px;
     
+}
+
+
+
+.check-lista-sektion-6{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d5d1d1 ;
+  max-width: 100%;
+}
+
+.sista-check-lista{
+    
+    border-bottom: none;
+}
+
+.check-lista-sektion-6 img{
+    height: 15px;
 }
