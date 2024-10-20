@@ -1,5 +1,7 @@
 /* FIXA -färger- -mobilvy- -variabler?- -maxwidth/min- -media- -typsnitt-*/
-
+*{
+    font-family: system-ui;
+}
 body{
     margin: 0;
 }
@@ -73,7 +75,7 @@ nav a{
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    padding: 7px;
+    padding: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -430,6 +432,16 @@ main{
     margin-bottom: 80px;
 }
 
+.sektion-rubrik-8 {
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px; 
+    width: 100%; 
+}
+
 .betyg-sektion-8{
     display: flex;
     gap: 10px;
@@ -445,13 +457,14 @@ main{
 
 .betyg-sektion-info h3{
     font-size: 24px;
-    font-weight: 450;
+   
     margin: 0;
     padding-bottom: 10px;
 }
 
 .betyg-sektion-info p{
     margin: 0;
+    width: 415px;
 }
 
 .badges{
@@ -461,5 +474,46 @@ main{
 
 .procent-sektion-8{
    display: grid;
-   grid-template-columns: repeat(4,1fr);
+   grid-template-columns: repeat(4, 1fr);
+   margin-bottom: 30px;
 }
+
+.procent-sektion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.procent-sektion h1{
+    color: #666666;
+    font-size: 53px;
+    margin: 0;
+}
+
+.procent-sektion{
+    color: #666666;
+    margin: 0;
+}
+
+.border-8{
+    border-right: 1px solid #e5e5e5;
+}
+
+.sektion-info-8{
+display: flex;
+align-items: center;
+text-align: center;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
+}
+
+.sektion-info-8 h1{
+    margin-bottom: 0;
+
+}
+
+
+
+/* HÄR BÖRJAR FOOTER*/
+
