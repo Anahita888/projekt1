@@ -1,3 +1,5 @@
+/* FIXA -färger- -mobilvy- -variabler?- -maxwidth/min- -media- -typsnitt-*/
+
 body{
     margin: 0;
 }
@@ -163,22 +165,26 @@ main{
 }
 
 .sektion-3-snabb-resultat{
-    max-width: 500px;
+    max-width: 499px;
     text-align: left;
 }
 
 .main-sektion-3 h1{
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    color: rgb(188, 184, 184);
     
 }
 
 .sektion-3-bild{
+ 
     width: 100%;
     border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
 }
 
 .liten-loggo-sektion-3{
@@ -186,11 +192,107 @@ main{
     align-items: center;
     justify-content: center;
     gap: 15px;
+    
 }
 
 .liten-loggo-sektion-3 img{
     width: 40px;
+    height: 100%;
+}
+
+/*SEKTION-4*/
+
+
+.sektion-4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+    font-family: system-ui;
+}
+
+.sektion-4-snabb-resultat{
+    max-width: 499px;
+    text-align: left;
+}
+
+.main-sektion-4 h1{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: rgb(188, 184, 184);
     
 }
 
+.sektion-4-bild{
+ 
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
 
+.liten-loggo-sektion-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+/* TEXTEN FÖR ANSIKTET ÄR INTE RÄTT*/
+.liten-loggo-sektion-4 img{
+    width: 40px;
+    height: 100%;
+}
+
+/* SEKTION-5*/
+
+.sektion-5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+    font-family: system-ui;
+}
+
+.sektion-5-snabb-resultat{
+    max-width: 499px;
+    text-align: left;
+}
+
+.main-sektion-5 h1{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: rgb(188, 184, 184);
+    
+}
+
+.sektion-5-bild{
+ 
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+
+.liten-loggo-sektion-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+/* TEXTEN FÖR ANSIKTET ÄR INTE RÄTT*/
+.liten-loggo-sektion-5 img{
+    width: 40px;
+    height: 100%;
+}
