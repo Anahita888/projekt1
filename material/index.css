@@ -192,7 +192,20 @@ main{
     align-items: center;
     justify-content: center;
     gap: 15px;
-    
+}
+
+.sektion-3-4-5-info{
+    display: block;
+}
+
+.bold{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.ljus-text{
+    color: rgb(188, 184, 184) ;
+    margin-top: 0;
 }
 
 .liten-loggo-sektion-3 img{
@@ -295,4 +308,16 @@ main{
 .liten-loggo-sektion-5 img{
     width: 40px;
     height: 100%;
+}
+
+.border-sektion-5{
+    border-bottom: 1px solid #e5e5e5;
+    height: 1px;
+    width: 100%;
+}
+
+/* SEKTION-6 BÖRJAR HÄR*/
+
+.sektion-6{
+    
 }
