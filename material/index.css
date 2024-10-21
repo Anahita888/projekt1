@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 600px){
-    .hamburger{
-        display: none;
-    }
-}
 
 @font-face{
     font-family: inter;
@@ -21,7 +16,9 @@
 }
 
 /*----MOBIL VY----*/
-@media (max-width: 599px){
+@media (max-width: 600px){
+   
+    
     nav{
        
         align-items: center;
@@ -29,6 +26,10 @@
         position: relative;
         border-bottom: none;
         margin-left: 10px;
+        position: fixed;
+        top: 0;
+        right: 20px;
+        left: 20px;
     }
 
     .pil{
@@ -61,6 +62,7 @@
     }
 
     #sektion-1{
+        
         flex-direction: column;
         text-align: center;
         padding: 20px;
@@ -96,7 +98,7 @@
         font-size: 26px;
         text-align: center;
     }
-    
+
     .work-sektion-7, .betyg-sektion-8, .procent-sektion-8 {
         display: flex;
         flex-direction: column;
@@ -125,8 +127,11 @@
         gap: 10px;
     }
 
-   
 }
+
+
+
+
 
 :root{
     --header-bg-color: white;
@@ -134,28 +139,23 @@
 }
 
 body{
-    margin: 0;
+    margin: 0 20px;
 }
 
 header{
     display: flex;
     align-items: baseline;
     justify-content: baseline;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0px 10px;
     background-color: var(--header-bg-color)
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px;
-    margin: 0 20px;
+    padding: 10px 0px;
     border-bottom: 1px solid #e5e5e5;
-    width: 1200px;
+    flex-grow: 1;
+    background-color: white;
 }
 
 .loggo{
@@ -165,13 +165,11 @@ nav{
 
 #left-menu, #right-menu{
     display: flex;
-    gap: 10px;
+    gap: 3px;
     
 }
 
-#right-menu{
-    margin-left: 100px;
-}
+
 
 .pil{
     width: 10px;    
@@ -181,12 +179,13 @@ nav{
 nav a{
     text-decoration: none;
     color: black;
+    font-size: 12px;
 }
 
 .nav-item{
     justify-self: center;
     align-self: center;
-    margin: 0px 10px;
+   
 }
 
 .hover-meny{
@@ -213,6 +212,9 @@ nav a{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.hamburger{
+    display: inline;
+}
 
 
 /* ändra färg, padding behövs? */
@@ -235,20 +237,19 @@ main{
 
 #sektion-1{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     padding: 50px;
-    max-width: 999px;    
+    
+
+    
 }
+
 
 .sektion-1-bild{
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin-left: 20px;
-    margin-top: 77px;
 }
 
 .sektion-info-1 p{
@@ -472,6 +473,10 @@ background-color: rgba(0, 0, 0, 0.804);
     padding: 0 40px;
 }
 
+.sektion-info{
+    text-align: center;
+}
+
 .sektion-info h1{
     line-height: 1;
     margin: 0;
@@ -527,7 +532,7 @@ background-color: rgba(0, 0, 0, 0.804);
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: 20px 0 80px 0 ;
-    width: 800px;
+    
     
 }
 
@@ -600,8 +605,7 @@ background-color: rgba(0, 0, 0, 0.804);
 }
 
 .badges{
-    height: 200px;
-    max-width: 100%;
+  width: 100%;
 }
 
 .procent-sektion-8{
@@ -648,7 +652,7 @@ margin-bottom: 30px;
 
 /* HÄR BÖRJAR FOOTER*/
 #border-footer{
-    width: 1200px;
+    
     border-top: 1px solid #e5e5e5;
     margin-left: auto;
     margin-right: auto;
@@ -657,21 +661,16 @@ margin-bottom: 30px;
 }
 
 footer{
-    
-    padding: 70px;
-    margin: 0 20px;
     display: flex;
     justify-content: center;
-  
-    gap: 56px;
-    margin-right: 40px;
+    margin-top: 50px;
+   
 }
 
 
 .container-footer{
     display: flex;
     flex-direction: column;
-    gap: 50px;
 }
 
 .container-bilder{
@@ -703,7 +702,7 @@ footer{
 #footer-meny{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 70px;
+  
     
 }
 
@@ -727,3 +726,11 @@ footer{
     cursor: pointer
 }
 
+#footer-content{
+    max-width: 1200px;
+    display: flex;
+}
+
+footer{
+    width: 100%;
+}
