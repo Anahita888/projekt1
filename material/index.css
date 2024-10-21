@@ -1,9 +1,138 @@
 /* FIXA -färger- -mobilvy- -variabler?- -maxwidth/min- -media- -typsnitt-*/
 *{
-    font-family: system-ui;
+    font-family: inter;
+    box-sizing: border-box;
 }
 
-@media (max-width)
+@media (max-width: 600px){
+    .hamburger{
+        display: none;
+    }
+}
+
+@font-face{
+    font-family: inter;
+    src: url(Inter.ttf) ;
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url(CinzelDecorative-Regular.ttf);
+}
+
+/*----MOBIL VY----*/
+@media (max-width: 599px){
+    nav{
+       
+        align-items: center;
+        width: 100%;
+        position: relative;
+        border-bottom: none;
+        margin-left: 10px;
+    }
+
+    .pil{
+        display: none;
+    }
+
+    #righr-menu{
+        align-items: center;
+    }
+
+    .hamburger{
+        display: block;
+        height: 20px;
+        padding: 5px;
+        z-index: 999;
+        
+    }
+
+    .hamburger:hover{
+        background-color: lightgray;
+        cursor:pointer;
+    }
+
+    #left-menu a, #right-menu a{
+        display: none;
+    }
+
+    main{
+        padding: 0 30px;
+    }
+
+    #sektion-1{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sektion-1-bild{
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .sektion-info-1{
+        align-items: center;
+    }
+
+    #sektion-2{
+        padding: 30px 10px;
+    }
+
+    #sektion-2 img{
+        max-width: 100px;
+    }
+
+    .sektion-3 .sektion-3-snabb-resultat{
+        text-align: center;
+    }
+
+    .main-sektion-3 h1{
+        font-size: 26px;
+    }
+
+    .main-sektion-4 h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .work-sektion-7, .betyg-sektion-8, .procent-sektion-8 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .procent-sektion, .border-7{
+        border-right: none;
+    }
+
+    .container-footer{
+        flex-direction: column;
+    }
+
+    .container-bilder{
+        gap: 0;
+    }
+
+    .footer-info p{
+        margin: 30px 0;
+    }
+
+    #footer-meny{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+   
+}
+
+:root{
+    --header-bg-color: white;
+    --sektion-3-bild-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+
 body{
     margin: 0;
 }
@@ -17,8 +146,7 @@ header{
     left: 0;
     right: 0;
     margin: 0px 10px;
-    
-    background-color: white;
+    background-color: var(--header-bg-color)
 }
 
 nav{
@@ -28,7 +156,6 @@ nav{
     margin: 0 20px;
     border-bottom: 1px solid #e5e5e5;
     width: 1200px;
-    
 }
 
 .loggo{
@@ -43,7 +170,7 @@ nav{
 }
 
 #right-menu{
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .pil{
@@ -54,9 +181,6 @@ nav{
 nav a{
     text-decoration: none;
     color: black;
-    /*INTE RÄTT TYPSNITT*/
-    font-family: system-ui;
-
 }
 
 .nav-item{
@@ -89,9 +213,7 @@ nav a{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#hamburger{
-    display: none;
-}
+
 
 /* ändra färg, padding behövs? */
 .black-button:hover{
@@ -118,7 +240,6 @@ main{
     align-items: center;
     gap: 10px;
     padding: 50px;
-    font-family: system-ui;
     max-width: 999px;    
 }
 
@@ -177,7 +298,6 @@ background-color: rgba(0, 0, 0, 0.804);
     flex-wrap: wrap;
     gap: 40px;
     margin: auto;
-    font-family: system-ui;
 }
 
 .sektion-3-snabb-resultat{
@@ -200,7 +320,8 @@ background-color: rgba(0, 0, 0, 0.804);
  
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    
+    box-shadow: var(--sektion-3-bild-box-shadow)
 }
 
 .liten-loggo-sektion-3{
@@ -238,7 +359,6 @@ background-color: rgba(0, 0, 0, 0.804);
     flex-wrap: wrap;
     gap: 40px;
     margin: auto;
-    font-family: system-ui;
 }
 
 .sektion-4-snabb-resultat{
@@ -286,7 +406,6 @@ background-color: rgba(0, 0, 0, 0.804);
     flex-wrap: wrap;
     gap: 40px;
     margin: auto;
-    font-family: system-ui;
 }
 
 .sektion-5-snabb-resultat{
@@ -341,7 +460,6 @@ background-color: rgba(0, 0, 0, 0.804);
     max-width: 550px;
     margin-bottom: 50px;
     text-align: center;
-    font-family: system-ui;
 }
 
 .sketion-info{
