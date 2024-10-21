@@ -1,7 +1,8 @@
-/* FIXA -färger- -mobilvy- -variabler?- -maxwidth/min- -media- -typsnitt-*/
+
 *{
     font-family: inter;
     box-sizing: border-box;
+    
 }
 
 
@@ -61,6 +62,34 @@
         padding: 0 30px;
     }
 
+
+    main {
+        padding: 10px; 
+    }
+    
+    .sektion-1, .sektion-2, .sektion-3 {
+        padding: 10px; 
+    }
+    
+    .betyg-sektion-8, .procent-sektion-8, .sektion-info-8 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .procent-sektion-8 {
+        grid-template-columns: repeat(2, 1fr); 
+        flex-direction: column;
+    }
+
+    .procent-sektion{
+        width: 100%;
+    }
+
+    .badges {
+        width: 80%; 
+        max-width: 300px; 
+    }
+
     #sektion-1{
         
         flex-direction: column;
@@ -72,10 +101,12 @@
         margin-left: 0;
         margin-top: 20px;
         width: 100%;
+        order: 1;
     }
 
     .sektion-info-1{
         align-items: center;
+        order: 2;
     }
 
     #sektion-2{
@@ -89,6 +120,7 @@
     .sektion-3 .sektion-3-snabb-resultat{
         text-align: center;
     }
+    
 
     .main-sektion-3 h1{
         font-size: 26px;
@@ -99,12 +131,88 @@
         text-align: center;
     }
 
+    .sektion-5 {
+        padding: 20px; 
+        align-items: center; 
+        text-align: center; 
+        max-width: 100%; 
+    }
+
+    .sektion-5-snabb-resultat {
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .main-sektion-5 h1 {
+        font-size: 20px; 
+        text-align: center;
+    }
+
+    .sektion-5-bild {
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .liten-loggo-sektion-5 {
+        justify-content: center; 
+        gap: 10px; 
+    }
+
+    .liten-loggo-sektion-5 img {
+        width: 30px; 
+    }
+
+    .border-sektion-5 {
+        margin: 20px 0; 
+        width: 100%; 
+    }
+
+   
+
     .work-sektion-7, .betyg-sektion-8, .procent-sektion-8 {
         display: flex;
         flex-direction: column;
         gap: 40px;
 
     }
+
+    .betyg-sektion-8 {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 20px; 
+    }
+
+    .badges {
+        width: 80%; 
+        max-width: 300px; 
+    }
+
+    .betyg-sektion-info p {
+        width: auto; 
+        text-align: center; 
+    }
+
+    .procent-sektion-8 {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        padding-bottom: 100px; 
+    }
+
+    .procent-sektion {
+        align-items: center; 
+        text-align: center; 
+        margin: 0; 
+    }
+
+    .border-8 {
+        border-right: none; 
+        border-bottom: 1px solid #e5e5e5; 
+        width: 100%;
+        height: 1px; 
+    }
+
 
     .procent-sektion, .border-7{
         border-right: none;
@@ -127,6 +235,7 @@
         gap: 10px;
     }
 
+   
 }
 
 
@@ -213,7 +322,7 @@ nav a{
 }
 
 .hamburger{
-    display: inline;
+   display: inline;
 }
 
 
@@ -426,7 +535,6 @@ background-color: rgba(0, 0, 0, 0.804);
 }
 
 .sektion-5-bild{
- 
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
@@ -612,6 +720,7 @@ background-color: rgba(0, 0, 0, 0.804);
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    margin-bottom: 30px;
+   gap: 20px;
 }
 
 .procent-sektion{
@@ -643,6 +752,7 @@ flex-direction: column;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
+margin-top: 20px;
 }
 
 .sektion-info-8 h1{
@@ -664,9 +774,13 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 50px;
-   
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#footer-content{
+    gap: 20px;
+}
 
 .container-footer{
     display: flex;
