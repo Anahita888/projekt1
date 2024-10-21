@@ -25,6 +25,7 @@ nav{
     padding: 20px 0px;
     margin: 0 20px;
     border-bottom: 1px solid #e5e5e5;
+    width: 1200px;
     
 }
 
@@ -62,6 +63,13 @@ nav a{
     margin: 0px 10px;
 }
 
+.hover-meny{
+    border-radius:3px ;
+}
+.hover-meny:hover{
+    background-color: rgba(211, 211, 211, 0.301);
+    
+}
 
 #liten-border{
     border-right: solid 1px #d5d1d1;
@@ -85,7 +93,7 @@ nav a{
 
 /* ändra färg, padding behövs? */
 .black-button:hover{
-    background-color: #353535;
+    background-color: rgba(0, 0, 0, 0.804);
 }
 
 /* MENYN SLUTAR HÄR*/
@@ -132,6 +140,10 @@ main{
     text-decoration: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 200px;
+}
+
+.black-button-getbarky:hover{
+background-color: rgba(0, 0, 0, 0.804);
 }
 
 
@@ -506,6 +518,7 @@ text-align: center;
 flex-direction: column;
 margin-left: auto;
 margin-right: auto;
+margin-bottom: 30px;
 }
 
 .sektion-info-8 h1{
@@ -513,7 +526,78 @@ margin-right: auto;
 
 }
 
-
-
 /* HÄR BÖRJAR FOOTER*/
+#border-footer{
+    width: 1200px;
+    border-top: 1px solid #e5e5e5;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+footer{
+    
+    padding: 70px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+  
+    gap: 56px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+}
+
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container-bilder{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.brand-footer{
+    width: 150px;
+
+}
+
+.container-medie-iconer{
+    display: flex;
+    gap: 15px;
+}
+
+.container-medie-iconer img{
+    height: 20px;
+    width: 20px;
+}
+
+.footer-info p{
+    color: #050505;
+}
+
+#footer-meny{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.footer-links a{
+    color: black;
+   
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #7f7f7f;
+    
+}
+.footer-links a:hover{
+    color: rgb(29, 95, 182);
+    cursor: pointer
+}
 
