@@ -400,9 +400,9 @@ background-color: rgba(0, 0, 0, 0.804);
     
 }
 
-/*FÖRSTA BILDEN OM EKORRAR*/
+/* KOMBINDERADE ATTRIBUT SEKTION-3-4-5*/
 
-.sektion-3{
+.sektion-3, .sektion-4, .sektion-5 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -410,12 +410,7 @@ background-color: rgba(0, 0, 0, 0.804);
     margin: auto;
 }
 
-.sektion-3-snabb-resultat{
-    max-width: 499px;
-    text-align: left;
-}
-
-.main-sektion-3 h1{
+.main-sektion-3 h1, .main-sektion-4 h1, .main-sektion-5 h1 {
     margin-bottom: 0;
     display: flex;
     flex-direction: row;
@@ -423,8 +418,52 @@ background-color: rgba(0, 0, 0, 0.804);
     align-items: center;
     text-align: center;
     color: rgb(188, 184, 184);
-    
 }
+
+.liten-loggo-sektion-3, .liten-loggo-sektion-4, .liten-loggo-sektion-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.liten-loggo-sektion-3 img, .liten-loggo-sektion-4 img, .liten-loggo-sektion-5 img {
+    width: 40px;
+    height: 100%;
+}
+
+.sektion-3-bild, .sektion-4-bild, .sektion-5-bild {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sektion-3-bild {
+    box-shadow: var(--sektion-3-bild-box-shadow);
+}
+
+.sektion-4-bild, .sektion-5-bild {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sektion {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1000px; /* Du kan justera maxbredden */
+    gap: 40px;
+}
+
+/*FÖRSTA BILDEN OM EKORRAR*/
+
+
+.sektion-3-snabb-resultat{
+    max-width: 499px;
+    text-align: left;
+}
+
+
+
+
 
 .sektion-3-bild{
  
@@ -434,16 +473,6 @@ background-color: rgba(0, 0, 0, 0.804);
     box-shadow: var(--sektion-3-bild-box-shadow)
 }
 
-.liten-loggo-sektion-3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.sektion-3-4-5-info{
-    display: block;
-}
 
 .bold{
     font-weight: bold;
@@ -455,37 +484,17 @@ background-color: rgba(0, 0, 0, 0.804);
     margin-top: 0;
 }
 
-.liten-loggo-sektion-3 img{
-    width: 40px;
-    height: 100%;
-}
+
 
 /*SEKTION-4*/
 
 
-.sektion-4{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin: auto;
-}
 
 .sektion-4-snabb-resultat{
     max-width: 499px;
     text-align: left;
 }
 
-.main-sektion-4 h1{
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    color: rgb(188, 184, 184);
-    
-}
 
 .sektion-4-bild{
  
@@ -494,45 +503,19 @@ background-color: rgba(0, 0, 0, 0.804);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
 }
 
-.liten-loggo-sektion-4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    
-}
+
 
 /* TEXTEN FÖR ANSIKTET ÄR INTE RÄTT*/
-.liten-loggo-sektion-4 img{
-    width: 40px;
-    height: 100%;
-}
+
 
 /* SEKTION-5*/
 
-.sektion-5{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin: auto;
-}
 
 .sektion-5-snabb-resultat{
     max-width: 499px;
     text-align: left;
 }
 
-.main-sektion-5 h1{
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    color: rgb(188, 184, 184);
-    
-}
 
 .sektion-5-bild{
     width: 100%;
@@ -540,19 +523,10 @@ background-color: rgba(0, 0, 0, 0.804);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
 }
 
-.liten-loggo-sektion-5{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    
-}
+
 
 /* TEXTEN FÖR ANSIKTET ÄR INTE RÄTT*/
-.liten-loggo-sektion-5 img{
-    width: 40px;
-    height: 100%;
-}
+
 
 .border-sektion-5{
     border-bottom: 1px solid #e5e5e5;
@@ -571,14 +545,14 @@ background-color: rgba(0, 0, 0, 0.804);
     text-align: center;
 }
 
-.sketion-info{
+.sektion-info{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 40px; 
 }
 
 .sektion-info{
